@@ -1,0 +1,127 @@
+.about-container {
+  font-family: "Poppins", sans-serif;
+  color: #1a202c;
+  background-color: #f9fafb;
+  line-height: 1.6;
+  margin-top: 18vh;
+}
+
+/* About Content */
+.about-content {
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #0d9488;
+  margin-bottom: 1rem;
+}
+
+/* Highlights */
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.highlight-card {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card h3 {
+  color: #0d9488;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #e0f2f1;
+  padding: 3rem 1rem;
+}
+
+.mission,
+.vision {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mission h3,
+.vision h3 {
+  color: #0d9488;
+  margin-bottom: 0.8rem;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #0d9488, #14b8a6);
+  color: white;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background: white;
+  color: #0d9488;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #f0fdfa;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .highlight-card {
+    width: 90%;
+  }
+
+  .mission,
+  .vision {
+    width: 90%;
+  }
+}

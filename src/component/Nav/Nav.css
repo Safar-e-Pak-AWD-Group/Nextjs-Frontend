@@ -1,0 +1,182 @@
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 92%;
+    height: 12vh;
+    display: flex;
+    padding: 2rem 6%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: rgba(71, 71, 71, 0.65) transparent;
+    backdrop-filter: blur(8px);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    margin-left: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a.active {
+    color: #f59e0b;
+}
+
+.nav-links ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #f59e0b;
+    transition: width 0.3s ease;
+}
+
+.nav-links ul li a:hover::after,
+.nav-links ul li a.active::after {
+    width: 0%;
+}
+
+/* ========== BUTTONS (Login / Book Now) ========== */
+
+/* .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+} */
+
+
+/* Common button base */
+.book-now-btn {
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    margin-left: 10px;
+}
+
+/* .login-btn {
+    border-radius: 25px;
+    padding: 0.6rem 3.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+/* Login button (outline style) */
+/* .login-btn {
+    border: 2px solid #2e8b57;
+    background: transparent;
+    text-align: center;
+}  */
+
+.login-btn:hover {
+    background: #8adaac;
+    transform: scale(1.05);
+}
+
+/* Book Now button (filled style) */
+.book-now-btn {
+    background: #2e8b57;
+    border: 2px solid #2e8b57;
+    margin-right: 5px;
+}
+
+.book-now-btn:hover {
+    background: #246b45;
+    transform: scale(1.05);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+    .nav-links ul {
+        display: none;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+    }
+}
+
+.dashboard-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dashboard-icon:hover {
+  transform: scale(1.1);
+}
+
+.logout-btn {
+  background-color: #f05454;
+  color: hsl(0, 27%, 96%);
+  border: 2px solid green;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* .logout-btn:hover {
+  background-color: #d94343;
+} */

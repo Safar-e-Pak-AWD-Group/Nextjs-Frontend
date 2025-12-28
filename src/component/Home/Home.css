@@ -1,0 +1,197 @@
+/* ====== HOME PAGE STYLING ====== */
+
+/* Section Wrapper */
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Text Box */
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  max-width: 800px;
+  width: 90%;
+  padding: 20px;
+}
+
+.text-box h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.text-box h1 span {
+  color: #0bbf72;
+}
+
+.text-box p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+/* Typing effect (optional, if already added in your project) */
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  animation: typing 3.5s steps(30, end) infinite alternate,
+    blink 0.75s step-end infinite;
+}
+/* Optional typing effect */
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  animation: typing 3.5s steps(30, end) infinite alternate,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-box {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  width: 320px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 12px 18px;
+  border: none;
+  background: #096b3d;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #0bbf72;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 1024px) {
+  .text-box h1 {
+    font-size: 40px;
+  }
+  .text-box p {
+    font-size: 16px;
+  }
+  .search-box {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-box h1 {
+    font-size: 32px;
+  }
+  .text-box p {
+    font-size: 15px;
+  }
+  .search-box {
+    width: 200px;
+    font-size: 14px;
+  }
+  .search-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box h1 {
+    font-size: 26px;
+  }
+  .text-box p {
+    font-size: 14px;
+  }
+  .search-box {
+    width: 460px;
+    font-size: 13px;
+  }
+  .search-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}

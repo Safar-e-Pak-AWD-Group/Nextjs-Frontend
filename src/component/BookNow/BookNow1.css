@@ -1,0 +1,204 @@
+.booknow-wrapper {
+  width: 100%;
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #a6e4ce, #f5eeee);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh; /* ❌ height:150vh removed */
+}
+
+.booknow-container {
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+.booknow-container h2 {
+  font-size: 34px;
+  color: #096b3d;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.booknow-container p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* TOGGLE BUTTONS */
+.toggle-type {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.toggle-type button {
+  padding: 12px 26px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toggle-type button.active {
+  background: #096b3d;
+  color: #fff;
+}
+
+/* FORM ELEMENTS */
+label {
+  font-weight: 600;
+  margin: 12px 0 6px;
+  display: block;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* PACKAGE DETAILS */
+.package-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f6fff9;
+  border-radius: 12px;
+  border: 1px solid #a5d6a7;
+}
+
+/* ATTRACTIONS */
+/* ATTRACTIONS CONTAINER */
+.attractions {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f4fff9;
+  border: 1px solid #b2dfc2;
+}
+
+/* GRID LAYOUT */
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* EACH CHECKBOX CARD */
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d4e8dc;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 14px;
+}
+
+/* HOVER */
+.checkbox-item:hover {
+  border-color: #096b3d;
+  background: #ecfff5;
+}
+
+/* CHECKBOX STYLE */
+.checkbox-item input {
+  width: 18px;
+  height: 18px;
+  accent-color: #096b3d;
+}
+
+
+/* ✈️ FLIGHTS */
+.flight-section {
+  margin-top: 20px;
+}
+
+.flight-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #fafafa;
+}
+
+.flight-card:hover {
+  border-color: #096b3d;
+}
+
+.flight-card.selected {
+  background: #e6fff3;
+  border: 2px solid #096b3d;
+}
+
+/* 🌦 WEATHER */
+.weather-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #eefdf7;
+  border: 1px solid #a5d6a7;
+  text-align: center;
+}
+
+.weather-box img {
+  width: 60px;
+}
+
+/* PRICE */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #096b3d;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* BUTTONS */
+.calculate,
+.btn-book {
+  width: 100%;
+  padding: 14px;
+  background: #096b3d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.calculate:hover,
+.btn-book:hover {
+  background: #0bbf72;
+}
+
+/* MESSAGE */
+.message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .booknow-container {
+    padding: 20px;
+  }
+}

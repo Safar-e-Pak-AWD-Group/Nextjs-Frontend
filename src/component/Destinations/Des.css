@@ -1,0 +1,145 @@
+.destinations {
+  
+  background: #cbd5e1;
+  font-family: 'Poppins', sans-serif;
+  margin-top: -80px;
+}
+
+.heading {
+  font-size: 24px;
+  color: rgb(6, 69, 41);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.heading h2 {
+  padding: 20px;
+}
+
+.image-row {
+  background: white;
+  padding: 6% 8%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+/* ----- Single Card ----- */
+.class-image {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 9px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: #fff;
+}
+
+.class-image img {
+  width: 90%;
+  height: 75%;
+  margin: 0 5%;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  border-radius: 5px;
+}
+
+.class-image a {
+  text-decoration: none;
+  color: black;
+}
+
+.class-image h4 {
+  margin-left: 28%;
+  margin-top: 5%;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* ----- Overlay ----- */
+.class-image .overlay {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  transition: top 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.overlay p {
+  padding: 40px;
+  color: #fff;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* ----- Hover Effects ----- */
+.class-image:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.9);
+}
+
+.class-image:hover .overlay {
+  top: 0;
+  opacity: 1;
+}
+
+.class-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ----- Responsive Design ----- */
+@media (max-width: 1024px) {
+  .class-image {
+    width: 320px;
+    height: 260px;
+  }
+  .image-row {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .class-image {
+    width: 90%;
+    height: 250px;
+  }
+  .class-image h4 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .overlay p {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 20px;
+    padding: 25px 10px;
+  }
+  .class-image {
+    width: 100%;
+    height: 220px;
+  }
+  .class-image img {
+    height: 70%;
+  }
+  .overlay p {
+    font-size: 0.85rem;
+    padding: 15px;
+  }
+}
