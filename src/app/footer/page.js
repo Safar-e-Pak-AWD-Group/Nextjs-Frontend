@@ -1,7 +1,8 @@
 import { Sign } from "crypto";
-import Footer from "../../component/Footer/Footer1.jsx";
+import Footers from "../../component/Footer/Footer1.jsx";
 
 function Footer(){
-    return <Footer/>
+    return <Footers/>
 }
+
 export default Footer;
